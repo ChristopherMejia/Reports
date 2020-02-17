@@ -12,7 +12,7 @@
 
     <div class="row">
         <div class = "col">
-            <a class="btn btn-secondary" id="btnSubmit1" href="/expense_reports">Back</a>
+            <a class="btn btn-secondary btn-block"  id="btnSubmit1" href="/expense_reports">Back</a>
         </div>
     </div>
 
@@ -20,7 +20,7 @@
         <div class = "col">
             <form action="/expense_reports/{{$report->id}}" method="POST">
                 @csrf
-                @method('put')
+                @method('delete')
                 <table class="table">
                     <tr>
                         <td> {{$report->id}}</td>
@@ -28,7 +28,9 @@
                         <td> {{$report->created_at}}</td>
                         <td> {{$report->updated_at}}</td>
                     </tr>
-                </table> 
+                </table>
+                <button class="btn btn-danger btn-block" type="submit" id="confirmDelete">Confirm</button>
+            </form>
         </div>
     </div>         
 </div>
