@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3bb4dacacf43532a01bf1d3d6dd3bbe1",
+    "content-hash": "6990e3ad6487b977109df42772c751e1",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -424,16 +424,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v6.15.0",
+            "version": "v6.15.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "2842924b9ce7ffc43b09b96966a64a2ce0708aaf"
+                "reference": "b7c152e3327c03428fb68d5abb63ca8b3eca8422"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/2842924b9ce7ffc43b09b96966a64a2ce0708aaf",
-                "reference": "2842924b9ce7ffc43b09b96966a64a2ce0708aaf",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/b7c152e3327c03428fb68d5abb63ca8b3eca8422",
+                "reference": "b7c152e3327c03428fb68d5abb63ca8b3eca8422",
                 "shasum": ""
             },
             "require": {
@@ -566,7 +566,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2020-02-11T14:26:43+00:00"
+            "time": "2020-02-12T21:56:14+00:00"
         },
         {
             "name": "laravel/tinker",
