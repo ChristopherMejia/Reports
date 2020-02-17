@@ -22,6 +22,7 @@
                     <td> {{$expense->title}}</td>
                     <td> {{$expense->created_at}}</td>
                     <td> {{$expense->updated_at}}</td>
+                <td> <a href="/expense_reports/{{$expense->id}}/edit">Edit</a></td>
                 </tr>
             @endforeach
         </table>
