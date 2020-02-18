@@ -20,10 +20,18 @@
     
     <div class="row" id="divForm">
         <div class = "col">
+            @if($errors->any())
+                <div class = "alert"> </div>
+                <ul>
+                    @foreach($errors->all() as $error)
+                        <li>{{$error}}</li>
+                    @endforeach
+                </ul>
+            @endif
             <form action="/expense_reports" method="POST">
                 @csrf
                 <div class="form-group"> 
-                    <input type="text" class="form-control" name="title" placeholder="Type Title">
+                    <input type="text" class="form-control" name="title" placeholder="Type Title" value="{{old('title')}}">
                 </div>
                 <button class="btn btn-primary btn-block" type="submit" id="btnSubmit2">Submit</button>
             </form>   
