@@ -6,7 +6,8 @@
 <div class="container">
     <div class="row">
         <div class = "col">
-        <h1>Edit Report {{$report->id}}</h1>
+        <h2>Edit Report:</h2>
+        <p>{{$report->title}}</p>
         </div>
     </div>
 

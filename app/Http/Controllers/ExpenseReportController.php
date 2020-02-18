@@ -57,7 +57,10 @@ class ExpenseReportController extends Controller
      */
     public function show($id)
     {
-        //
+        $report = ExpenseReport::find($id);
+        return view('expenseReport.details',[
+            'report' => $report
+        ]);
     }
 
     /**
