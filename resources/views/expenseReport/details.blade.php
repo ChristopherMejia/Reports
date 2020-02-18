@@ -19,7 +19,22 @@
 
     <div class="row">
         <div class ="col">
-            <p>Details ...</p>
+            <table class="table table-hover">
+                <tr> 
+                    <th><span>Description </span></th>
+                    <th><span>Amount</span></th>
+                    <th><span>Fecha Creacion</span></th>
+                    <th><span>Fecha Actualizacion</span></th>
+                </tr>
+                @foreach ($report->expenses as $expense)
+                    <tr>
+                        <td>{{$expense->description}}</td>
+                        <td>{{$expense->amount}}</td>
+                        <td> {{$expense->created_at}}</td>
+                        <td> {{$expense->updated_at}}</td>
+                    </tr>
+                @endforeach
+            </table>
         </div>
     </div>
      
