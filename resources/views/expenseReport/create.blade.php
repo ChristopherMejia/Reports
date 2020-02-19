@@ -14,7 +14,7 @@
 
     <div class="row">
         <div class = "col">
-            <a class="btn btn-secondary btn-block" id="btnSubmit1" href="/expense_reports">Back</a>
+        <a class="btn btn-secondary btn-block" id="btnSubmit1" href="/expense_reports/{{$report->id}}">Back</a>
         </div>
     </div>
     
@@ -28,7 +28,7 @@
                     @endforeach
                 </ul>
             @endif
-            <form action="/expense_reports" method="POST">
+            <form action="/expense_reports/{{$report->id}}" method="POST">
                 @csrf
                 <div class="form-group"> 
                     <input type="text" class="form-control" name="title" placeholder="Type Title" value="{{old('title')}}">

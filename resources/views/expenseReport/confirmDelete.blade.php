@@ -23,7 +23,6 @@
                 @method('delete')
                 <table class="table">
                     <tr>
-                        <td> {{$report->id}}</td>
                         <td> {{$report->title}}</td>
                         <td> {{$report->created_at}}</td>
                         <td> {{$report->updated_at}}</td>

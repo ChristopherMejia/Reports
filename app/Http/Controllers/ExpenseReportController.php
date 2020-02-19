@@ -46,7 +46,8 @@ class ExpenseReportController extends Controller
         $report = new ExpenseReport();
         $report->title = $request->get('title');
         $report->save();
-        return redirect('/expense_reports');
+        return redirect('/expense_reports')->with('success','Added Delete');
+
     }
 
     /**
@@ -108,7 +109,7 @@ class ExpenseReportController extends Controller
         $report = ExpenseReport::find($id);
         $report->delete();
 
-        return redirect('/expense_reports');
+        return redirect('/expense_reports')->with('delete','Deleted Report');
     }
 
     public function confirmDelete($id)

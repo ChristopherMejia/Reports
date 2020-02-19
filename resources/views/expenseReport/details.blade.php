@@ -13,7 +13,7 @@
 
     <div class="row">
         <div class = "col">
-            <a class="btn btn-secondary btn-block" id="btnSubmit1" href="/expense_reports">Back</a>
+        <a class="btn btn-secondary btn-block" id="btnSubmit1" href="/expense_reports">Back</a>
         </div>
     </div>
 
@@ -33,8 +33,14 @@
                         <td> {{$expense->created_at}}</td>
                         <td> {{$expense->updated_at}}</td>
                     </tr>
-                @endforeach
+                @endforeach 
             </table>
+            <div class = "row">
+                <div class = "col">
+                <a class ="btn btn-primary btn-block" href ="/expense_reports/{{$report->id}}/expenses/create">Create Expense</a>
+                </div>
+            </div>
+
         </div>
     </div>
      

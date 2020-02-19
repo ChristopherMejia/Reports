@@ -32,7 +32,18 @@
                 <a class="btn btn-outline-danger" href="/expense_reports/{{$expense->id}}/confirmDelete">Delete</a></td>
                 </tr>
             @endforeach
-        </table>
+       </table>
+
+       @if (session('success'))
+            <div class="alert alert-success">
+                {{ session('success') }}
+            </div>
+        @endif
+        @if (session('delete'))
+        <div class="alert alert-success">
+            {{ session('delete') }}
+        </div>
+    @endif
     </div>
 </div>
 @endsection
