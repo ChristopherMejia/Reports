@@ -13,6 +13,12 @@
 
     <div class="row">
         <div class = "col">
+        <a class="btn btn-primary" href="/expense_reports/{{$report->id}}/confirmEmail">Send Email</a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class = "col">
         <a class="btn btn-secondary btn-block" id="btnSubmit1" href="/expense_reports">Back</a>
         </div>
     </div>

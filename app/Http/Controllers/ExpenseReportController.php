@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 use App\ExpenseReport;
 
+use App\Mail\OrderShipped;
+
 use Illuminate\Http\Request;
 
 class ExpenseReportController extends Controller
@@ -118,5 +120,20 @@ class ExpenseReportController extends Controller
         return view('expenseReport.confirmDelete',[
             'report' => $report
         ]);
+    }
+
+    public function confirmEmail($id)
+    {
+        $report = ExpenseReport::find($id);
+        return view('expenseReport.confirmEmail',[
+            'report' => $report
+        ]);
+    }
+
+    public function sendEmail($id)
+    {
+        $report = ExpenseReport::find($id);
+        //Mail::to($request->User())->send(new OrderShipped($id));
+        return $report;
     }
 }
